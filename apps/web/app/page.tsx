@@ -4,6 +4,7 @@ import { ArrowRight, Brain, Heart, Shield, ChevronDown } from "lucide-react";
 import { GridPattern } from "@/components/GridPattern";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import Map from "@/components/Map";
 
 export const metadata = {
   title: "Ivan Barinaga - Psicólogo Cognitivo Conductual en Rosario",
@@ -181,17 +182,7 @@ export default function Home() {
               Montevideo 5965, Rosario, Santa Fe, Argentina
             </p>
           </div>
-          <div className="aspect-[16/9] rounded-2xl overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.13643523478!2d-60.7039908!3d-32.9474071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7acc8d43fd183%3A0xc4884b26a8339737!2sMontevideo%205965%2C%20S2008DPS%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1734206211917!5m2!1sen!2sar"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
+          <Map />
         </section>
       </div>
     </>
