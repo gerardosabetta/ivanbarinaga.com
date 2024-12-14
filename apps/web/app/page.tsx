@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Brain, Heart, Shield, ChevronDown } from "lucide-react";
 import { GridPattern } from "@/components/GridPattern";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Ivan Barinaga - Psicólogo Cognitivo Conductual en Rosario",
@@ -50,6 +51,7 @@ export default function Home() {
   return (
     <>
       <GridPattern />
+      <SpeedInsights />
       <div className="relative space-y-24">
         <section className="text-center pt-12 md:pt-24">
           <div className="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 mb-6">
