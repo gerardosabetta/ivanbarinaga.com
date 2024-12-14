@@ -86,7 +86,7 @@ export default function Home() {
         <section className="relative">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-2xl opacity-20 dark:opacity-40 max-size-[550px]" />
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-2xl opacity-20 dark:opacity-40 size-[550px] max-w-full max-h-full" />
               <Image
                 src="/ivan-barinaga.webp"
                 alt="Ivan Barinaga"
