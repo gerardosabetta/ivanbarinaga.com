@@ -44,17 +44,18 @@ export default async function BlogPage({
 }: {
   searchParams: { page: string };
 }) {
-  const page = Number(searchParams.page) || 1;
+  const { page } = await searchParams;
+  const pageNumber = Number(page) || 1;
   const pageSize = 10;
   const totalPosts = await getTotalPosts();
   const totalPages = Math.ceil(totalPosts / pageSize);
-  const posts = await getPosts(page, pageSize);
+  const posts = await getPosts(pageNumber, pageSize);
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <h1 className="text-3xl font-bold mb-8 text-center">Blog</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {posts.map((post) => (
+        {posts.map((post: any) => (
           <div
             key={post.slug.current}
             className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden"
@@ -85,9 +86,9 @@ export default async function BlogPage({
         ))}
       </div>
       <div className="flex justify-between mt-8">
-        {page > 1 ? (
+        {pageNumber > 1 ? (
           <Link
-            href={`?page=${page - 1}`}
+            href={`?page=${pageNumber - 1}`}
             className="text-blue-600 dark:text-blue-400 font-semibold"
           >
             ← Anterior
@@ -95,9 +96,9 @@ export default async function BlogPage({
         ) : (
           <div></div>
         )}
-        {page < totalPages ? (
+        {pageNumber < totalPages ? (
           <Link
-            href={`?page=${page + 1}`}
+            href={`?page=${pageNumber + 1}`}
             className="text-blue-600 dark:text-blue-400 font-semibold"
           >
             Siguiente →
