@@ -26,6 +26,7 @@ const footerLinks = [
       {
         name: "Agendar Cita",
         href: "https://wa.me/5493415698000?text=Hola%20vengo%20de%20tu%20sitio%20web%20y%20me%20gustaria%20saber%20mas",
+        target: "_blank",
       },
     ],
   },
@@ -75,6 +76,7 @@ export default function Footer() {
                       <Link
                         href={link.href}
                         className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+                        target={link.target}
                       >
                         {link.name}
                       </Link>
