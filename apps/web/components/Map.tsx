@@ -40,6 +40,8 @@ export default function Map() {
         allowFullScreen
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        aria-label="Mapa de ubicación de Ivan Barinaga"
+        title="Mapa de ubicación de Ivan Barinaga"
       />
     </div>
   );

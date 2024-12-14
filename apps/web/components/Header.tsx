@@ -23,6 +23,7 @@ export default function Header() {
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+          aria-label="Menu"
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
