@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { client } from "../../sanity/lib/client";
 import { groq } from "next-sanity";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { urlForImage } from "@/sanity/lib/image";
 
@@ -31,19 +30,7 @@ async function getTotalPosts() {
   return client.fetch(query);
 }
 
-type Post = {
-  _id: string;
-  title: string;
-  slug: { current: string };
-  publishedAt: string;
-  excerpt: string;
-};
-
-export default async function BlogPage({
-  searchParams,
-}: {
-  searchParams: { page: string };
-}) {
+export default async function BlogPage({ searchParams }: any) {
   const { page } = await searchParams;
   const pageNumber = Number(page) || 1;
   const pageSize = 10;

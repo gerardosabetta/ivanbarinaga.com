@@ -39,11 +39,7 @@ async function getPost(slug: string) {
   return client.fetch(query, { slug });
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export async function generateMetadata({ params }: any) {
   const { slug } = await params;
   const post = await getPost(slug);
 
@@ -68,11 +64,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function BlogPostPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function BlogPostPage({ params }: any) {
   const { slug } = await params;
   const post = await getPost(slug);
 
