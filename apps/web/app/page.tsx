@@ -139,7 +139,7 @@ export default function Home() {
               aquí para acompañarte en tu proceso.
             </p>
             <Link
-              href="mailto:Barinagapsi@gmail.com"
+              href="https://wa.me/5493415698000?text=Hola%20vengo%20de%20tu%20sitio%20web%20y%20me%20gustaria%20saber%20mas"
               className="inline-flex items-center px-6 py-3 text-lg font-semibold text-blue-600 bg-white rounded-full hover:bg-blue-50 transition-colors"
             >
               Contactar ahora <ArrowRight className="ml-2" />

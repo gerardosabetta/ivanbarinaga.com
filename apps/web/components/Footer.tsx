@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Youtube, Twitter } from "lucide-react";
+import { Instagram, Youtube } from "lucide-react";
 
 const socialLinks = [
   {
@@ -11,11 +11,6 @@ const socialLinks = [
     name: "YouTube",
     href: "https://youtube.com/@ps_barinagaivan",
     icon: Youtube,
-  },
-  {
-    name: "TikTok",
-    href: "https://www.tiktok.com/@ps_barinagaivan",
-    icon: Twitter,
   },
 ];
 
