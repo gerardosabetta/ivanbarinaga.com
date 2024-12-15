@@ -15,18 +15,17 @@ export const metadata = {
 const services = [
   {
     title: "Depresión",
-    description:
-      "Superá los momentos difíciles y recuperá tu bienestar emocional",
+    description: "Desafía tus cogniciones, rearma tu rutina",
     icon: Heart,
   },
   {
-    title: "Trastorno Obsesivo Compulsivo",
-    description: "Técnicas efectivas para manejar pensamientos intrusivos",
+    title: "Ansiedad",
+    description: "Herramientas prácticas para controlar y reducir tu ansiedad",
     icon: Brain,
   },
   {
     title: "Ataques de Pánico",
-    description: "Herramientas prácticas para controlar la ansiedad",
+    description: "Afrontemos juntos las situaciones temidas",
     icon: Shield,
   },
 ];
@@ -40,7 +39,7 @@ const faqs = [
   {
     question: "¿Cuánto dura el tratamiento?",
     answer:
-      "La duración del tratamiento depende de cada persona y sus objetivos. Trabajamos juntos para establecer metas claras y evaluamos el progreso regularmente.",
+      "La duración del tratamiento depende de cada persona, sus síntomas y objetivos. Trabajaremos juntos para establecer metas claras y evaluaremos el progreso regularmente para que puedas alcanzar tus metas en un corto plazo.",
   },
   {
     question: "¿Las sesiones son presenciales o virtuales?",
@@ -61,13 +60,13 @@ export default function Home() {
             Psicología Cognitivo Conductual
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-700 to-gray-600 dark:from-white dark:via-gray-200 dark:to-gray-400">
-            Armá un Futuro Mejor con
+            Del pensamiento a la acción,
             <br />
-            Decisiones Conscientes
+            del problema a la solución.
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Terapia especializada para transformar tu vida. Recuperá tu
-            bienestar emocional con técnicas probadas y apoyo profesional.
+            Sesiones diseñadas para tus necesidades. Recuperá tu bienestar
+            emocional con técnicas probadas y apoyo profesional.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -104,8 +103,9 @@ export default function Home() {
               </h2>
               <p className="text-gray-600 dark:text-gray-300 text-lg">
                 Como psicólogo cognitivo conductual, me dedico a ayudarte a
-                superar tus desafíos mentales y emocionales. Mi enfoque se basa
-                en técnicas probadas y respaldadas por la ciencia.
+                superar tus desafíos mentales, emocionales y de conducta. Mi
+                enfoque se basa en técnicas probadas y respaldadas por la
+                ciencia.
               </p>
               <ul className="space-y-4">
                 {services.map((service) => (

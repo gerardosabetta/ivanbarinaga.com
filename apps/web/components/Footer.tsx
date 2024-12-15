@@ -41,8 +41,8 @@ export default function Footer() {
             </Link>
             <p className="mt-4 text-gray-600 dark:text-gray-300">
               Psicólogo Cognitivo Conductual especializado en terapia para
-              depresión, TDAH, TOC, ataques de pánico, ansiedad y fobias. Te
-              ayudo a superar tus desafíos emocionales.
+              depresión, TOC, ataques de pánico, ansiedad y fobias. Te ayudo a
+              que te conviertas en tu propio psicoterapeuta.
             </p>
             <div className="mt-6 flex space-x-4">
               {socialLinks.map((item) => (
